@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { IButtonProps } from "./Button.types";
-import Button from "./Button.module.sass"
+import styles from "./Button.module.sass"
 
 const Button: FC<IButtonProps> = ({ className, text, onClick }) => {
   return (
