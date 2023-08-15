@@ -1,9 +1,10 @@
 import { FC } from "react";
 import { IButtonProps } from "./Button.types";
+import Button from "./Button.module.sass"
 
 const Button: FC<IButtonProps> = ({ className, text, onClick }) => {
   return (
-    <button className={className} onClick={onClick}>
+    <button className={`button ${className}`} onClick={onClick}>
         {text}
     </button>
   )

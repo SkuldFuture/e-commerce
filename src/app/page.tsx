@@ -1,4 +1,4 @@
-import { Card } from '@/shared/ui'
+import { Button, Card } from '@/shared/ui'
 import styles from './page.module.sass'
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <main className={styles.main}>
       Hello next.js
       <Card/>
+      <Button text="asdsad"/>
     </main>
   )
 }
