@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ICardProps } from "./Card.types";
+import { ICardProps } from "./Cart.types";
 
 const Card:FC<ICardProps> = ({ className }) => {
   return <div className={className}>Card</div>;
