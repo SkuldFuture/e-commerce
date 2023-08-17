@@ -1,7 +1,8 @@
 import { forwardRef } from "react";
-import { ButtonProps, defa, DEFAULT_ELEMENT } from "./types";
+import { ButtonProps, defaultProps, DEFAULT_ELEMENT } from "./types";
 import styles from "./styles.module.sass"
 import clsx from "clsx";
+import { Spinner } from "../spinner";
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps<typeof DEFAULT_ELEMENT>>(
   function Button(
@@ -11,8 +12,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps<typeof DEFAULT_E
       skeletonLoading,
       rounded,
       gradient,
-      size,
-      variant,
+      size=defaultProps.size,
+      variant=defaultProps.variant,
       startIcon,
       endIcon,
       children,
@@ -23,7 +24,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps<typeof DEFAULT_E
   ) {
     const ButtonSpinner = (
       <div className={styles.spinner}>
-        Spinner
+        <Spinner strokeWidth={4} />
       </div>
     );
 

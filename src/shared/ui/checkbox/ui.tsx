@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ICheckboxProps } from "./Checkbox.types";
+import { ICheckboxProps } from "./types";
 
 export const Checkbox: FC<ICheckboxProps> = ({
   className,

@@ -14,7 +14,7 @@ interface IButtonOwnProps<E extends ElementType = ElementType> {
   as?: E;
 }
 
-const defaultProps: IButtonOwnProps = {
+export const defaultProps: IButtonOwnProps = {
   variant: "primary",
   size: "regular",
   skeletonLoading: false,
