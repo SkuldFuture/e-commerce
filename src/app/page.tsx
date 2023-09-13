@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       Hello next.js
       <Button>asdsad</Button>
-      <Input />
+      <Input placeholder='Zdarova'  />
     </main>
   )
 }

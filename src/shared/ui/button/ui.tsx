@@ -27,7 +27,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps<typeof DEFAULT_E
         <Spinner strokeWidth={4} />
       </div>
     );
-
+    const a = Number("55")
+  
     const Element = as || DEFAULT_ELEMENT;
 
     return (
